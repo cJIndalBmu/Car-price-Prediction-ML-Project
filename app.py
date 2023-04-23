@@ -7,7 +7,7 @@ import pickle
 model = pickle.load(open('model1.pkl', 'rb'))
 
 #Title of app
-st.title('Will the person make a purchase or not')
+st.title('Predicted price of car: ')
 
 #Range of paramenters
 #Price	Kilometer	Fuel Type	Transmission	Owners Before	Engine	Fuel Tank Capacity	Age
@@ -30,6 +30,6 @@ def predict():
     print(label)
 
 #Printing the output 
-st.success('The car price is: '+ str(label) + 'thumbsup: ')
+    st.success('The car price is : ' + str(label) + ' :thumbsup:')
 trigger = st.button('Predict', on_click=predict)
 
